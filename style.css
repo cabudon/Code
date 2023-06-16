@@ -1,0 +1,106 @@
+. {
+    box-sizing: border-box;
+}
+
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Header Styles */
+header {
+    background-color: #222;
+    color: #fff;
+    padding: 1rem;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* 新增的垂直居中 */
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    margin-right: 1rem;
+}
+
+/* Main Styles /
+    main {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 1rem;
+    justify-content: space-between; / 水平居中 */
+}
+
+.filter,
+.recommended-products {
+    flex: 1 1 20%;
+    padding: 0 1rem;
+}
+
+.filter h2,
+.recommended-products h2 {
+    margin-top: 0;
+}
+
+.main-content {
+    flex: 3 1 60%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    /* 水平居中 /
+    align-items: center; / 垂直居中 */
+}
+
+.product {
+    flex: 1 1 25%;
+    padding: 1rem;
+    text-align: center;
+}
+
+.product img {
+    margin-bottom: 0.5rem;
+}
+
+.product h3 {
+    margin: 0;
+    font-size: 1.2rem;
+}
+
+.product p {
+    margin: 0;
+    color: #888;
+}
+
+.add-to-cart {
+    display: block;
+    margin-top: 1rem;
+    padding: 0.5rem;
+    background-color: #ff9900;
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: background-color 0.3s ease;
+}
+
+.add-to-cart:hover {
+    background-color: #e68a00;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #ccc;
+    padding: 1rem;
+    text-align: center;
+}
